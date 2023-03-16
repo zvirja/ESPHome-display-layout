@@ -55,7 +55,7 @@ Properties:
 - Main axis alignment
 - Cross axis alignment
 
-Helper Functions:
+Functions:
 - `_COL(TBlocks&&...blocks)` - Renders a list of blocks _vertically_ with the default alignment
 - `_COL_A(Align align, TBlocks&&...blocks)` - Renders a list of blocks _vertically_, allows to specify the alignment
 - `_ROW(TBlocks&&...blocks)` - Renders a list of blocks _horizontally_ with the default alignment
@@ -137,7 +137,7 @@ Notice that here Header will be at the top, Footer at the bottom and content in 
 
 Components to introduce space between components.
 
-Helper functions:
+Functions:
 - `_HSPACE(x)` - Introduces horizontal padding
 - `_VSPACE(x)` - Introduces vertical padding
 
@@ -160,7 +160,7 @@ _COL_A(START | STRETCH,
 
 This container just renders a border around inner component. Useful for debugging.
 
-Helper functions:
+Functions:
 - `_D(x)` - Render a frame around inner component
 
 ## Elements
@@ -169,7 +169,7 @@ Helper functions:
 
 Text block renders the text using the specified font.
 
-Helper functions:
+Functions:
 - `_T(Font* font, const char* format, TArgs...args)` - Render text using the specified font
 - ` _TROW(TArgs&&...textBlocks)` - Render a text row aligning all the inner text blocks by baseline.
 
@@ -195,7 +195,7 @@ _COL(
 
 Just renders a horizontal line. Takes all the available space given by parent container if possible (e.g. if it's put inside vertical panel with `STRETCH` alignment).
 
-Helper functions:
+Functions:
 - `_HR(thickness, hpad, vpad)` - Renders a horizontal line
 
 Example:
